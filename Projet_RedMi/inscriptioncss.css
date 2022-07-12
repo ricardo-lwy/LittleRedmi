@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --blue:#3498db;
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --black:#333;
+    --white:#fff;
+    --light-bg:#eee;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+    --border:2px solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    marging:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--light-bg);
+}
+
+.btn, .delete-btn, .option-btn{
+    display:inline-block;
+    padding:10px 30px;
+    cursor:pointer;
+    font-size: 18px;
+    color:var(--white);
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color:black;
+}
+.btn:hover, .delete-btn:hover, .option-btn:hover{
+    background: var(--orange);
+}
+
+.form-container{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+
+.form-container form{
+    width:500px;
+    border-radius: 5px;
+    border:var(--border);
+    padding:20px;
+    text-align:center;
+    background-color:var(--white);
+}
+
+.form-container h3{
+    font-size:30px;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    color:var(--black);
+}
+
+.form-container form .box{
+    width: 100%;
+    border-radius: 5px;
+    border:var(--border);
+    padding:12px 14px;
+    font-size:18px;
+    margin:10px 0;
+}
